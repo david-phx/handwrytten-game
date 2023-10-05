@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "hwMadeline";
+  src: url("/assets/hwMadeline.ttf") format("truetype");
+}
+
 * {
   margin: 0;
   padding: 0;
