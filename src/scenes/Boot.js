@@ -1,0 +1,17 @@
+export class Boot extends Phaser.Scene {
+  constructor() {
+    super("Boot");
+  }
+
+  create() {
+    const savedHighScore = localStorage.getItem("highscore");
+
+    if (savedHighScore && !isNaN(savedHighScore)) {
+      this.registry.set("highscore", parseInt(savedHighScore));
+    } else {
+      this.registry.set("highscore", 0);
+    }
+
+    this.scene.start("Preloader");
+  }
+}
