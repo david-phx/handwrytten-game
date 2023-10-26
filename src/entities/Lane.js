@@ -1,7 +1,7 @@
 import { Envelope } from "./Envelope.js";
 import { Client } from "./Client.js";
 
-export class Route {
+export class Lane {
   constructor(scene, id, y) {
     this.scene = scene;
     this.id = id;
