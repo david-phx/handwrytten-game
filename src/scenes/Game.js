@@ -1,6 +1,9 @@
 import { Player } from "../entities/Player.js";
 import { Lane } from "../entities/Lane.js";
 
+/**
+ * Main game scene.
+ */
 export class Game extends Phaser.Scene {
   constructor() {
     super("Game");
@@ -9,6 +12,9 @@ export class Game extends Phaser.Scene {
     this.lanes;
   }
 
+  /**
+   * Create the game scene.
+   */
   create() {
     this.add.image(0, 0, "background").setOrigin(0, 0);
 
